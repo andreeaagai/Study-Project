@@ -1,0 +1,43 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.logout{
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #0de4c0;
+  transform: scale(1.05);
+}
+
+.nav-button:active {
+  background-color: #1d9d74;
+}

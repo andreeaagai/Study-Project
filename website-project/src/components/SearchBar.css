@@ -1,0 +1,19 @@
+.search-bar input {
+  width: 300px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd; 
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #4CAF50; 
+  box-shadow: 0 0 8px rgba(72, 179, 109, 0.5); 
+}
+
+.search-bar input::placeholder {
+  color: #888; 
+  font-style: italic; 
+}

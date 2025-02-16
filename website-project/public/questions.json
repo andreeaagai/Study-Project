@@ -1,0 +1,141 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "title": "Cum pot instala React pe o aplicație nouă?",
+        "body": "Am nevoie să instalez React pe un proiect nou. Care sunt pașii pe care trebuie să îi urmez?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "John Doe",
+            "body": "Poți instala React folosind `npx create-react-app nume-app`. Apoi, vei putea să rulezi aplicația cu `npm start`."
+          },
+          {
+            "id": 2,
+            "author": "Jane Smith",
+            "body": "Altă metodă este să adaugi React manual în fișierele existente, folosind `npm install react react-dom`."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Cum pot adăuga un background imagine în CSS?",
+        "body": "Vreau să setez o imagine ca background pentru pagina mea folosind CSS. Ce trebuie să fac?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Mary Johnson",
+            "body": "Poți seta imaginea de background folosind `background-image: url('calea-către-imagine');` în fișierul tău CSS."
+          },
+          {
+            "id": 2,
+            "author": "Michael Brown",
+            "body": "De asemenea, poți să folosești `background-size: cover;` pentru a te asigura că imaginea se va adapta dimensiunilor ecranului."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Cum funcționează Promises în JavaScript?",
+        "body": "Ce sunt Promises în JavaScript și cum le folosim pentru a gestiona operațiunile asincrone?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Alexandra White",
+            "body": "Un Promise este un obiect care reprezintă valoarea unui proces asincron care va fi disponibilă în viitor. Poți să folosești `.then()` pentru a manipula rezultatele."
+          },
+          {
+            "id": 2,
+            "author": "Chris Green",
+            "body": "Promise-urile pot fi utilizate cu `async` și `await`, iar aceasta face ca codul să arate mai lin și mai ușor de citit."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Cum pot să instalez React pe un proiect existent?",
+        "body": "Am un proiect existent și vreau să încep să folosesc React. Care sunt pașii pentru a-l instala într-un proiect care nu folosește React încă?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Andrei",
+            "body": "Pentru a instala React într-un proiect existent, trebuie să adaugi pachetele necesare folosind npm sau yarn. Poți folosi următoarele comenzi:\n\nnpm install react react-dom\nnpm install @babel/preset-react"
+          },
+          {
+            "id": 2,
+            "author": "Maria",
+            "body": "Dacă folosești Webpack, asigură-te că ai configurat corect Babel pentru a transpila JSX-ul. Vei avea nevoie de 'babel-loader' și de presetările corespunzătoare."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Ce este o funcție pură în JavaScript?",
+        "body": "Am auzit mult despre funcțiile pure în JavaScript, dar nu sunt sigur ce înseamnă. Poți să îmi explici?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Ion",
+            "body": "O funcție pură este o funcție care, atunci când este apelată cu aceleași argumente, întotdeauna returnează același rezultat și nu are efecte secundare asupra altor părți ale aplicației. De exemplu, o funcție care doar face un calcul pe datele de intrare este o funcție pură."
+          },
+          {
+            "id": 2,
+            "author": "Elena",
+            "body": "Un exemplu de funcție pură ar fi:\n\nfunction aduna(a, b) {\n  return a + b;\n}\nAcesta nu modifică nimic din afară și returnează același rezultat pentru aceleași argumente."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Cum pot să îmbunătățesc performanța unei aplicații React?",
+        "body": "Aplicația mea React pare să se miște puțin încet. Ce tehnici pot să folosesc pentru a îmbunătăți performanța acesteia?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Vasile",
+            "body": "Există mai multe modalități de a îmbunătăți performanța în React. Unele dintre cele mai eficiente sunt: utilizarea componentelor `React.memo` pentru a împiedica redibuirea componentelor care nu se schimbă, folosirea `useCallback` și `useMemo` pentru a memora funcțiile și valorile, și împărțirea aplicației în părți mai mici cu ajutorul React.lazy."
+          },
+          {
+            "id": 2,
+            "author": "Mihai",
+            "body": "De asemenea, poți folosi instrumente precum `React DevTools` pentru a identifica ce componente sunt re-renderizate frecvent și care sunt cauzele acestora."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Ce este 'hoisting' în JavaScript?",
+        "body": "Am citit despre hoisting în JavaScript, dar nu am înțeles foarte bine ce înseamnă. Poți să îmi explici mai clar?",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Adrian",
+            "body": "'Hoisting' se referă la comportamentul în JavaScript în care variabilele și funcțiile sunt ridicate la începutul contextului lor de execuție. De exemplu, poți să folosești o variabilă sau o funcție înainte de a fi declarată în codul tău, deoarece JavaScript o va 'ridica' la începutul funcției sau al fișierului."
+          },
+          {
+            "id": 2,
+            "author": "Roxana",
+            "body": "Un exemplu simplu ar fi:\n\nconsole.log(x);\nvar x = 5;\nÎn mod normal, ai obține 'undefined' deoarece variabila este ridicată, dar nu este încă atribuită la momentul apelului."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Cum pot să folosesc `async/await` în JavaScript?",
+        "body": "Am auzit despre `async/await` și vreau să înțeleg mai bine cum să le folosesc pentru a face codul meu mai clar și mai ușor de înțeles.",
+        "answers": [
+          {
+            "id": 1,
+            "author": "Georgiana",
+            "body": "`async/await` sunt folosite pentru a gestiona promisiunile într-un mod mai curat și mai sincron. O funcție marcată cu `async` va returna o promisiune, iar în interiorul acelei funcții, poți folosi `await` pentru a aștepta o promisiune înainte de a continua execuția codului. Exemple:\n\nasync function fetchData() {\n  let response = await fetch('https://api.example.com');\n  let data = await response.json();\n  console.log(data);\n}"
+          },
+          {
+            "id": 2,
+            "author": "Vlad",
+            "body": "Este important de menționat că `await` poate fi folosit doar într-o funcție `async`. Acest lucru face ca gestionarea erorilor să fie mai simplă și codul mai ușor de citit."
+          }
+        ]
+      }
+    ]
+  }
+  
