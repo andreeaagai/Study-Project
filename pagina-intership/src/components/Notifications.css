@@ -1,0 +1,91 @@
+.notification-list {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15%;
+  max-width: 70%;
+  padding: 0px;
+}
+.notification-item {
+  margin: 20px;
+  width: calc(25% - 30px); 
+  height: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  box-sizing: border-box;
+  border: 1px solid #b4b0b0;
+}
+.icone {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+.notification-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.notification-item p {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 10px;
+}
+.notification-item.unread {
+  opacity: 0.7;
+}
+
+
+@media (max-width: 600px) {
+  .notification-list {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .notification-item {
+    width: calc(100% - 40px); 
+    height: auto;
+  }
+  .icone {
+    position: relative; 
+    margin-top: 0; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .notification-list {
+    margin-left: 5%;
+    max-width: 90%;
+  }
+  .notification-item {
+    width: calc(50% - 30px); 
+    height: auto; 
+  }
+  .icone {
+    position: relative; 
+    margin-top: 0; 
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .notification-list {
+    margin-left: 10%;
+    max-width: 80%;
+  }
+  .notification-item {
+    width: calc(33.33% - 30px); 
+    height: auto; 
+  }
+  .icone {
+    position: relative; 
+    margin-top: 0; 
+  }
+}
